@@ -1,0 +1,28 @@
+@import url(https://fonts.bunny.net/css?family=acme:400);
+
+.footer{
+    font-family: 'Acme', sans-serif;
+    position: relative;
+    padding: 30px;
+    margin-top: 100px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px rgba(197, 191, 191, 0.7);
+}
+.footer p{
+    font-size: 14px;
+    color:white;
+}
+.link-social{
+    margin: 10px;
+    color: orangered;
+    transition: color 0.5s ease-in-out;
+}
+.link-social:hover{
+    color: orange;
+}

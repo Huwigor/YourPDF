@@ -1,0 +1,121 @@
+@import url(https://fonts.bunny.net/css?family=acme:400);
+
+body{
+    font-family: 'Acme', sans-serif;
+}
+.header{
+    min-width: 100%;
+    z-index: 2000;
+    top: 0;
+    display: flex;
+    font-family: 'Acme', sans-serif;
+    padding: 20px;
+
+    flex-wrap: wrap;
+}
+.title-site{
+    cursor: pointer;
+    white-space: nowrap;
+  font-size: 17px;
+  color:white;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10vw;
+}
+.icon-site{
+    height: 40px;
+    position: relative;
+    bottom: 5px;
+    margin-left: 5px;
+}
+.icon-search{
+    height: 15px;
+
+}
+.icon{
+    height: 18px;
+    position: relative;
+    bottom: 5px;
+}
+.icon-cart{
+    height: 25px;
+    position: relative;
+    bottom: 5px;
+}
+.input-box{
+    position: relative;
+    width: 40vw;
+    height: 40px;
+    display: flex;
+}
+.input-box input{
+    width: 100%;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+    padding: 15px 55px 15px 10px;
+}
+.input-box input:focus{
+    outline: none;
+}
+.input-box button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-links{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+.nav-links a {
+    text-decoration: none;
+    margin-right: 3vw;
+    font-size: 15px;
+    white-space: nowrap;
+    color:white;
+    transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover{
+    color: rgb(223, 85, 21);
+}
+.main-user{
+    position: relative;
+}
+.box-user{
+    position: absolute;
+    top: 50px;
+    height: 65px;
+    border-radius: 5px;
+    width: 150px;
+    opacity: 0;
+    right: 1vw;
+    background-color: rgba(72, 72, 75, 0.7);
+    box-shadow: 0px 0px 3px 0px rgba(255, 84, 17, 0.966);
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+}
+.box-user button{
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+.box-user button:hover{
+    background-color: rgba(255, 84, 17, 0.966);
+    color: white;
+}
+.box-user-active{
+    max-height: 200px;
+    opacity: 1;
+}
