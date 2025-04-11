@@ -48,10 +48,26 @@
    .main-user{
         background-color: rgba(35, 36, 36, 0.9);
         padding: 20px 30px 30px;
+        box-shadow: 0px 0px 4px 0px rgba(255, 84, 17, 0.9) !important;
         flex-direction: column !important;
     }
     .btn-auth{
        position: relative;
+    }
+    .box-img-menu{
+        min-width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block !important;
+    }
+    .img-menu{
+        height: 150px;
+        width: 100%;
+        border-radius: 5px;
+
     }
 
    .box-user{
@@ -181,6 +197,9 @@ body{
 }
 .main-btn-user{
     position: relative;
+}
+.box-img-menu{
+    display: none;
 }
 .box-user{
     position: absolute;

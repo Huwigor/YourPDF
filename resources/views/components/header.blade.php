@@ -10,6 +10,9 @@
     <nav class="box-links ms-auto">
             @auth 
                <div class="main-user">
+                  <div class="box-img-menu">
+                    <img class="img-menu" src="{{asset('imgs/logo-yourpdf.png')}}" alt="">
+                  </div>  
                    <div class="main-btn-user">
                        <a class="btn-user btn-auth" href="#">Olá, {{auth()->user()->name}} ! <i class="icon" data-lucide="user-round-cog"></i><i class="icon" data-lucide="chevron-down"></i></a>
                        <div class="box-user" id="box-user">
@@ -17,7 +20,15 @@
                         </div>
                    </div>
                     <br>
-                    <a class="btn-auth" href="/favoritos">Favoritos <i class="icon" data-lucide="heart"></i></a>
+                    @if (Request::is('/'))
+                        <a class="btn-auth link-favoritos" href="/favoritos">Favoritos 
+                            <i class="icon" data-lucide="heart"></i>
+                        </a>
+                    @elseif (Request::is('favoritos'))
+                        <a class="btn-auth link-home" href="/">Home
+                            <i class="icon" data-lucide="home"></i>
+                        </a>
+                    @endif
                </div>
             @endauth 
             @guest
