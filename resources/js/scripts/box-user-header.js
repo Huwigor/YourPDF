@@ -1,16 +1,14 @@
-document.addEventListener('DOMContentLoaded', function(){
 
-    const btnUser = document.getElementById('btn-user');
-    const boxUser = document.getElementById('box-user');
 
-    btnUser.addEventListener('click', function(e){
+$(document).ready(function(){
+
+    $('.btn-user').on('click', function(e){
         e.stopPropagation()
-         boxUser.classList.toggle('box-user-active');
-    });
+        $('.box-user').toggleClass('box-user-active');
+    })
 
-    document.addEventListener('click', function(e){
+    $(document).on('click', function(e){
         e.stopPropagation()
-        boxUser.classList.remove('box-user-active');
-    });
-
-});
+        $('.box-user').removeClass('box-user-active');
+    })
+})

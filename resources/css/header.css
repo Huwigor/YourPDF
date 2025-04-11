@@ -1,9 +1,111 @@
 @import url(https://fonts.bunny.net/css?family=acme:400);
 
+@media(max-width:600px){
+    .icon-site{
+        height: 25px !important;
+    }
+    .btn-categorias{
+        display: block !important;
+        position: relative;
+    }
+    .row-btn{
+        background-color: aliceblue;
+        border: 1px solid white;
+        width: 30px;
+        margin: 7px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+        height: 4px;
+    }
+    .row1-rotate {
+        transform: rotate(45deg) translate(10px, 5px);
+    }
+    
+    .row2-hidden {
+        opacity: 0;
+    }
+    
+    .row3-rotate {
+        transform: rotate(-45deg) translate(10px, -5px);
+    }
+
+
+   .box-links{
+        flex-direction: column !important;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out,  opacity 0.5s ease-in-out !important;
+   }
+   .box-links-active{
+        max-height: 700px;
+        opacity: 1;
+   }
+   .main-user{
+        background-color: rgba(35, 36, 36, 0.9);
+        padding: 20px 30px 30px;
+        flex-direction: column !important;
+    }
+    .btn-auth{
+       position: relative;
+    }
+
+   .box-user{
+        position: relative !important;
+        top: 0 !important;
+        border-radius: 5px;
+        width: 100% !important;
+        opacity: 1 !important;
+        right: 0vw !important;
+        background-color: transparent !important;
+        box-shadow: 0px 0px 3px 0px rgba(121, 111, 108, 0.966) !important;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out !important;
+        overflow: hidden;
+    }
+    .box-user button{
+        border: none;
+        font-size: 14px;
+        color: white;
+        margin-top: 10px;
+        text-align: start !important;
+        padding: 10px 15px 5px 20px !important;
+        border-radius: 5px;
+        width: 100%;
+        background-color: transparent;
+        transition: color 0.3s ease-in-out !important;
+    }
+    .box-user button:hover{
+        background-color: transparent !important;
+        color: orangered !important;
+    }
+    .box-noauth{
+        display: flex;
+        flex-direction: column !important;
+        padding: 20px 30px 30px;
+        overflow: hidden;
+        background-color: rgb(56, 59, 59, 0.9);
+    }
+    .box-noauth a{
+       margin: 10px;
+    }
+}
+
+
+
+
+
+
+
 body{
     font-family: 'Acme', sans-serif;
 }
 .header{
+    position: relative;
     min-width: 100%;
     z-index: 2000;
     top: 0;
@@ -11,16 +113,16 @@ body{
     font-family: 'Acme', sans-serif;
     padding: 20px;
 
-    flex-wrap: wrap;
+   
 }
 .title-site{
     cursor: pointer;
     white-space: nowrap;
-  font-size: 17px;
-  color:white;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 10vw;
+    font-size: 17px;
+    color:white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10vw;
 }
 .icon-site{
     height: 40px;
@@ -42,48 +144,42 @@ body{
     position: relative;
     bottom: 5px;
 }
-.input-box{
-    position: relative;
-    width: 40vw;
-    height: 40px;
-    display: flex;
+
+.btn-categorias{
+  background-color: transparent;
+  border: none;
+  display: none;
 }
-.input-box input{
-    width: 100%;
-    font-size: 13px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-    padding: 15px 55px 15px 10px;
-}
-.input-box input:focus{
+.btn-categorias:focus{
     outline: none;
 }
-.input-box button{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent;
-    border: none;
+.icon-categorias{
+    height: 40px;
+    color: white;
 }
 
-.nav-links{
+
+
+.box-links{
     display: flex;
     margin-top: 10px;
     flex-direction: row;
 }
-.nav-links a {
+.box-links a {
     text-decoration: none;
     margin-right: 3vw;
     font-size: 15px;
-    white-space: nowrap;
     color:white;
     transition: color 0.3s ease-in-out;
 }
-.nav-links a:hover{
+.box-links a:hover{
     color: rgb(223, 85, 21);
 }
 .main-user{
+    display: flex;
+    flex-direction: row;
+}
+.main-btn-user{
     position: relative;
 }
 .box-user{
@@ -95,7 +191,7 @@ body{
     opacity: 0;
     right: 1vw;
     background-color: rgba(72, 72, 75, 0.7);
-    box-shadow: 0px 0px 3px 0px rgba(255, 84, 17, 0.966);
+    box-shadow: 0px 0px 3px 0px rgba(255, 84, 17, 0.9);
     max-height: 0;
     transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
     overflow: hidden;
