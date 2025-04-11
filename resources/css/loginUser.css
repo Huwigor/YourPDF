@@ -1,0 +1,240 @@
+@import url(https://fonts.bunny.net/css?family=acme:400);
+
+@media(max-width: 550px) {
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    .box-form{
+        min-width: 90% !important;
+    }
+    .box-input input{
+        font-size: 12px !important;
+    }
+    .box-input label{
+        font-size: 13px !important;
+        margin-left: 20px !important;
+    }
+    .btn-google{
+        font-size: 12px !important;
+    }
+    .box-icons{
+        right: 20px !important;
+    }
+    .icon{
+        height: 15px !important;
+        right: 20px !important; 
+    }
+    .btn-login{
+        padding: 7px !important;
+        font-size: 12px !important;
+    }
+    .btn-google{
+        min-width: 90% !important;
+    }
+    .icon-google{
+        height: 20px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media(min-width:551px) and (max-width:700px){
+    .box-form{
+        min-width: 60% !important;
+    }
+}
+
+@media(min-width:712px) and (max-width:1050px){
+    .box-form{
+        min-width: 50% !important;
+    }
+}
+
+@media (max-width:1054px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-img-login{
+        display: none;
+    }
+    .box-form{
+        min-width: 50%;
+        left: 0 !important;
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+.header{
+    position: relative;
+    font-family: 'Acme', sans-serif;
+    z-index: 10;
+    padding: 20px;
+}
+.header h1{
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 7vw;
+    margin-top: 5px;
+    color: white;
+}
+.header img{
+    height: 30px;
+    margin-left: 5px;
+    position: relative;
+    bottom: 5px;
+}
+.img-body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.main{
+    min-width: 100%;
+}
+.box-img-login{
+    position: relative;
+    z-index: 40;
+    margin-top: 10vh;
+    left:8vw;
+    height: 30vw;
+}
+.img-login{
+    width: 100%;
+    height: 100%;
+}
+
+.box-form{
+    width: 30vw;
+    z-index: 40;
+    overflow: hidden;
+    white-space: nowrap;
+    left: 15vw;
+    position: relative;
+}
+.form-login{
+  outline: none;
+  user-select: none; 
+  -webkit-user-select: none;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10vh;
+  background-color: white;
+  font-family: 'Acme', sans-serif;
+}
+.box-input{
+    display: flex;
+    flex-direction: column;
+}
+.box-input input{
+    width: 90%;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.box-input-password{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.box-input-password input{
+    min-width: 90%;
+}
+.box-icons{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    outline: none;
+    user-select: none; 
+    -webkit-user-select: none;
+}
+.icon{
+    height: 20px;
+    cursor: pointer;
+    color: rgb(97, 96, 96);
+}
+.hidden-eye{
+    display: none;
+}
+.box-input input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+}
+.box-input label{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.btn-google{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(204, 226, 245);
+    transition: background-color 0.5s ease-in-out;
+    padding: 7px;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.btn-google:hover{
+    background-color: rgb(175, 206, 233);
+}
+.icon-google{
+    height: 20px;
+    margin-right: 10px;
+}
+#erro-login-user{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    text-align: center;
+    color: red;
+    padding: 5px;
+    width: 70%;
+    font-size: 14px;
+}
+.btn-login{
+    background-color: rgb(83, 110, 182);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+.btn-login:hover{
+    background-color: rgb(67, 90, 155);
+}
+.link-cadastro{
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(97, 96, 96);
+    width: 100% !important;
+}
+
