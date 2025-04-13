@@ -25,13 +25,18 @@ LUCIDE REACT
 
 ### MOBILE
 ![home mobile](public/printsPDF/home-mobile.png)
+
 ![menu mobile](public/printsPDF/menu-mobile.png)
+
 ![email mobile](public/printsPDF/email-mobile.png)
 
 ### DESKTOP
 ![home desktop](public/printsPDF/home-desktop.png)
+
 ![details desktop](public/printsPDF/detalhes-desktop.png)
+
 ![share desktop](public/printsPDF/share-desktop.png)
+
 ![favoritos desktop](public/printsPDF/favoritos-desktop.png)
 
 ## This project was developed just to show a little of my knowledge with js and php..
