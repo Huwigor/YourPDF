@@ -1,25 +1,25 @@
 # YourPDF is a website designed to make PDF files available, organize and share them in a simple and efficient way.
 
 ## FEATURES
-Download PDFS
-Share PDF with Wathsapp
-Send PDF to Email
-Add to favorites
+- Download PDFS
+- Share PDF with Wathsapp
+- Send PDF to Email
+- Add to favorites
 
 ## TECNOLOGIES USED
 
 ### FRONTEND
-HTML
-CSS
-JS / JQUERY
+- HTML
+- CSS
+- JS / JQUERY
 
 ### BACKEND
-PHP - LARAVEL
-MYSQL
+- PHP - LARAVEL
+- MYSQL
 
 ##LIBS
-BOOTSTRAP
-LUCIDE REACT
+- BOOTSTRAP
+- LUCIDE REACT
 
 ### IMAGES
 
